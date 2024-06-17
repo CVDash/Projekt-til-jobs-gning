@@ -1,0 +1,212 @@
+.banner {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  border-bottom: 5px solid #da2d72;
+}
+
+.sticky {
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.logo img {
+  width: 80px;
+  height: 80px;
+  margin-left: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.languages img {
+  width: 80px;
+  height: 80px;
+  margin-right: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.languages a:hover, .logo a:hover {
+  opacity: 50%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+}
+
+body {
+  color: #fec214;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body a {
+  text-decoration: none;
+}
+
+.whatcanido {
+  background-color: black;
+  text-shadow: 2px 2px 2px #da2d72;
+  border-bottom: 5px solid #da2d72;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 2.5rem;
+}
+
+.whatcanido p {
+  padding-bottom: 20px;
+}
+
+.programminglanguages {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+.programminglanguages a {
+  padding-bottom: 20px;
+}
+
+.programminglanguages a:hover {
+  opacity: 0.5;
+}
+
+.programmingother {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+.programmingother a {
+  padding-bottom: 20px;
+}
+
+.programmingother a:hover {
+  opacity: 0.5;
+}
+
+.programmingicons {
+  border: #fec214 solid 2px;
+  box-shadow: #da2d72 2px 2px 2px;
+  padding: 10px 10px 10px 10px;
+}
+
+footer {
+  background-color: black;
+  padding: 30px 0 30px 0;
+  border-bottom: 5px solid #da2d72;
+  text-shadow: 2px 2px 2px #da2d72;
+  font-size: 2.5rem;
+}
+
+footer p {
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+
+.youcanfindmeon {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.youcanfindmeon a {
+  color: #fec214;
+}
+
+.youcanfindmeon a:hover {
+  opacity: 50%;
+}
+
+.icons {
+  display: flex;
+  justify-content: left;
+  width: 100%;
+}
+
+.icons a {
+  padding-left: 50px;
+}
+
+.introduction {
+  background-color: black;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  text-shadow: 2px 2px 2px #da2d72;
+  border-bottom: #da2d72 solid 5px;
+}
+
+.introduction p {
+  padding-bottom: 20px;
+}
+
+.introduction h1 {
+  color: #da2d72;
+  text-shadow: 2px 2px 2px #fec214;
+  padding-bottom: 20px;
+}
+
+.introductiontext {
+  padding-left: 20px;
+  padding-right: 500px;
+  font-size: 2.55rem;
+  gap: 20px;
+}
+
+.introductionimg {
+  margin-right: 100px;
+  position: relative;
+}
+
+.introductionimgcontainer {
+  overflow: hidden;
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+}
+
+.introductionimg img {
+  width: 100%;
+  border: #da2d72 solid 10px;
+  transition: 0.5s;
+}
+
+.introductionimg:hover img {
+  transform: scale(0.9);
+}
+
+.introductionimg:hover .imgdescription {
+  visibility: visible;
+}
+
+.imgdescription {
+  position: absolute;
+  color: #fec214;
+  text-align: center;
+  background: rgba(39, 37, 38, 0.2);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: opacity 0.5s, visibility 0.2s;
+  padding-top: 50%;
+  visibility: hidden;
+  font-size: 30px;
+}
+
+/*# sourceMappingURL=main.css.map */

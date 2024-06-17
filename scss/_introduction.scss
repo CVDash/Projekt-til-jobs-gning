@@ -1,0 +1,76 @@
+.introduction {
+background-color: black;
+padding-top: 50px;
+padding-bottom: 20px;
+display: flex;
+justify-content: space-between;
+text-shadow: 2px 2px 2px #da2d72;
+border-bottom: #da2d72 solid 5px;
+}
+
+.introduction p {
+    padding-bottom: 20px;
+}
+
+.introduction h1 {
+    color: #da2d72;
+    text-shadow: 2px 2px 2px #fec214;
+    padding-bottom: 20px;
+}
+
+.introductiontext {
+    padding-left: 20px;
+    padding-right: 500px;
+    font-size: 2.55rem;
+    gap: 20px;
+}
+
+.introductionimg {
+    margin-right: 100px;
+    position: relative;
+}
+
+.introductionimgcontainer {
+    
+    overflow: hidden;
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.introductionimg img {
+    
+    width: 100%;
+    border: #da2d72 solid 10px;
+    transition:0.5s;
+    
+}
+
+
+.introductionimg:hover img{
+    transform: scale(0.9);
+    
+    
+}
+
+.introductionimg:hover .imgdescription{
+    visibility: visible;
+    
+}
+
+.imgdescription {
+    position:absolute;
+    color: #fec214;
+    text-align: center;
+    background: rgba(39, 37, 38, 0.2);
+    top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: opacity .5s, visibility .2s;
+  padding-top: 50%;
+  visibility: hidden;
+  font-size: 30px;
+}
+
+
