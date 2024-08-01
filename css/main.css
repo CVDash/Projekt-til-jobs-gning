@@ -80,6 +80,7 @@ body a {
 .whatcanido p {
   padding-bottom: 20px;
   padding-top: 20px;
+  padding-left: 20px;
 }
 
 .programminglanguages {
@@ -154,7 +155,7 @@ footer {
 
 footer p {
   padding-bottom: 20px;
-  padding-left: 20px;
+  padding-left: 40px;
 }
 
 .youcanfindmeon {
@@ -175,7 +176,7 @@ footer p {
   justify-content: left;
   width: 100%;
   gap: 90px;
-  padding-left: 45px;
+  padding-left: 65px;
 }
 
 @media (max-width: 1532px) {
@@ -202,14 +203,14 @@ footer p {
 
 .introduction p {
   padding-bottom: 20px;
-  padding-left: 30px;
+  padding-left: 20px;
 }
 
 .introduction h1 {
   color: #da2d72;
   text-shadow: 2px 2px 2px #fec214;
   padding-bottom: 20px;
-  padding-left: 30px;
+  padding-left: 20px;
 }
 
 .introductiontext {
