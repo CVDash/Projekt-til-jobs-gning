@@ -202,12 +202,14 @@ footer p {
 
 .introduction p {
   padding-bottom: 20px;
+  padding-left: 30px;
 }
 
 .introduction h1 {
   color: #da2d72;
   text-shadow: 2px 2px 2px #fec214;
   padding-bottom: 20px;
+  padding-left: 30px;
 }
 
 .introductiontext {
