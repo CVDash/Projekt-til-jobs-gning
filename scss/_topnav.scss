@@ -32,6 +32,23 @@
     margin-bottom: 20px;
 }
 
+@media (max-width: 508px) {
+
+    .languages img {
+        margin-right: 20px;
+    }
+    .languages{ padding-right: 20px;}
+}
+
+@media (max-width: 450px) {
+
+    .languages img, .logo img {
+        width: 55px;
+        height: 55px;
+    }
+    .languages{ padding-right: 20px;}
+}
+
 .languages a:hover, .logo a:hover {
     opacity: 50%;
 }

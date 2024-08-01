@@ -15,7 +15,7 @@ footer p {
 .youcanfindmeon {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    
     
     
 }
@@ -35,9 +35,24 @@ footer p {
     display: flex;
     justify-content: left;
    width: 100%;
-   
+   gap: 90px;
+   padding-left: 45px;
 }
 
-.icons a {
-    padding-left: 50px;
+
+
+@media (max-width: 1532px) {
+    footer{
+        text-align: center;
+    }
+
+    footer p {
+        padding-left: 0;
+        
+    }
+
+    .icons {
+        justify-content: center;
+        padding-right: 30px;
+    }
 }

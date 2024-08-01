@@ -1,13 +1,13 @@
-// When the user scrolls the page, execute myFunction
+
 window.onscroll = function() {myFunction()};
 
-// Get the header
+
 var header = document.getElementById("bannerid");
 
-// Get the offset position of the navbar
+
 var sticky = header.offsetTop;
 
-// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+
 function myFunction() {
   if (window.pageYOffset > sticky) {
     header.classList.add("sticky");
@@ -15,3 +15,13 @@ function myFunction() {
     header.classList.remove("sticky");
   }
 } 
+
+
+function dropdownopen() {
+  var x = document.getElementById("dropdown");
+   if (x.style.display === "block") {
+     x.style.display = "none";
+   } else {
+     x.style.display = "block";
+     }
+ }

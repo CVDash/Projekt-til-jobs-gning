@@ -27,6 +27,23 @@
   margin-bottom: 20px;
 }
 
+@media (max-width: 508px) {
+  .languages img {
+    margin-right: 20px;
+  }
+  .languages {
+    padding-right: 20px;
+  }
+}
+@media (max-width: 450px) {
+  .languages img, .logo img {
+    width: 55px;
+    height: 55px;
+  }
+  .languages {
+    padding-right: 20px;
+  }
+}
 .languages a:hover, .logo a:hover {
   opacity: 50%;
 }
@@ -62,6 +79,7 @@ body a {
 
 .whatcanido p {
   padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 .programminglanguages {
@@ -70,7 +88,6 @@ body a {
   width: 100%;
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 20px;
 }
 
 .programminglanguages a {
@@ -99,11 +116,34 @@ body a {
 }
 
 .programmingicons {
+  display: flex;
   border: #fec214 solid 2px;
   box-shadow: #da2d72 2px 2px 2px;
   padding: 10px 10px 10px 10px;
+  width: 250px;
+  height: 130px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
+.programmingicons i {
+  font-size: 5.5rem;
+}
+
+@media (max-width: 1532px) {
+  .whatcanido p {
+    text-align: center;
+  }
+  .programminglanguages, .programmingother {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .programmingicons {
+    width: 500px;
+  }
+}
 footer {
   background-color: black;
   padding: 30px 0 30px 0;
@@ -120,7 +160,6 @@ footer p {
 .youcanfindmeon {
   display: flex;
   justify-content: center;
-  gap: 10px;
 }
 
 .youcanfindmeon a {
@@ -135,12 +174,22 @@ footer p {
   display: flex;
   justify-content: left;
   width: 100%;
+  gap: 90px;
+  padding-left: 45px;
 }
 
-.icons a {
-  padding-left: 50px;
+@media (max-width: 1532px) {
+  footer {
+    text-align: center;
+  }
+  footer p {
+    padding-left: 0;
+  }
+  .icons {
+    justify-content: center;
+    padding-right: 30px;
+  }
 }
-
 .introduction {
   background-color: black;
   padding-top: 50px;
@@ -168,6 +217,45 @@ footer p {
   gap: 20px;
 }
 
+@media (min-width: 1531px) {
+  .introductionimgmobile {
+    display: none;
+  }
+}
+@media (max-width: 1530px) {
+  .introduction {
+    display: flex;
+    align-items: center;
+  }
+  .introductiontext {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .introductionimg {
+    display: none;
+  }
+  .introduction h1 {
+    text-align: center;
+  }
+}
+@media (max-width: 814px) {
+  .introduction h1 {
+    font-size: 4.5rem;
+    padding-bottom: 40px;
+  }
+}
+@media (max-width: 724px) {
+  .introduction h1 {
+    font-size: 4rem;
+  }
+}
+.introductionimgcontainermobile {
+  overflow: hidden;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+}
+
 .introductionimg {
   margin-right: 100px;
   position: relative;
@@ -180,17 +268,21 @@ footer p {
   margin: 0 auto;
 }
 
-.introductionimg img {
+.introductionimg img, .introductionimgmobile img {
   width: 100%;
   border: #da2d72 solid 10px;
   transition: 0.5s;
 }
 
-.introductionimg:hover img {
+.introductionimg:hover img, .introductionimgmobile:hover img {
   transform: scale(0.9);
 }
 
 .introductionimg:hover .imgdescription {
+  visibility: visible;
+}
+
+.introductionimgmobile:hover .imgdescriptionmobile {
   visibility: visible;
 }
 
@@ -207,6 +299,21 @@ footer p {
   padding-top: 50%;
   visibility: hidden;
   font-size: 30px;
+  height: 500px;
+}
+
+.imgdescriptionmobile {
+  position: absolute;
+  color: #fec214;
+  text-align: center;
+  background: rgba(39, 37, 38, 0.2);
+  top: 46%;
+  transition: opacity 0.5s, visibility 0.2s;
+  visibility: hidden;
+  font-size: 30px;
+  height: 300px;
+  width: 300px;
+  padding-top: 130px;
 }
 
 /*# sourceMappingURL=main.css.map */

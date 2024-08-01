@@ -11,6 +11,7 @@ font-size: 2.5rem;
 
 .whatcanido p {
     padding-bottom: 20px;
+    padding-top: 20px;
 }
 
 .programminglanguages {
@@ -19,8 +20,9 @@ font-size: 2.5rem;
     width: 100%;
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 20px;
 }
+
+
 .programminglanguages a {
     padding-bottom: 20px;
 }
@@ -48,7 +50,31 @@ font-size: 2.5rem;
 }
 
 .programmingicons {
+    display: flex;
     border: #fec214 solid 2px;
     box-shadow: #da2d72 2px 2px 2px;
     padding: 10px 10px 10px 10px;
+    width: 250px;
+    height: 130px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.programmingicons i {
+    font-size: 5.5rem;
+}
+
+@media (max-width: 1532px) {
+    .whatcanido p {
+        text-align: center;
+    }
+    .programminglanguages , .programmingother {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .programmingicons {
+        width: 500px;
+    }
 }
